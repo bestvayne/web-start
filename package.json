@@ -1,0 +1,25 @@
+{
+  "name": "web-startup",
+  "version": "0.0.1",
+  "description": "web dev start-up package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bestvayne/web-start.git"
+  },
+  "keywords": [
+    "web-dev",
+    "font-end",
+    "dev",
+    "web"
+  ],
+  "author": "vayne-Yax",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bestvayne/web-start/issues"
+  },
+  "homepage": "https://github.com/bestvayne/web-start#readme"
+}
