@@ -1,2 +1,2 @@
-# web-start
-web dev start-up package
+# web-startup cli
+web project cli
