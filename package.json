@@ -1,11 +1,11 @@
 {
   "name": "web-startup",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "web dev start-up package",
   "main": "index.js",
   "bin": {
-    "start": "./index.js",
-    "web-startup": "./bin/web-startup-cli.js"
+    "hello": "./index.js",
+    "make-base-page": "./make-base-page.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,5 +28,10 @@
   "bugs": {
     "url": "https://github.com/bestvayne/web-start/issues"
   },
-  "homepage": "https://github.com/bestvayne/web-start#readme"
+  "homepage": "https://github.com/bestvayne/web-start#readme",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "inquirer": "^6.5.0",
+    "shelljs": "^0.8.3"
+  }
 }
