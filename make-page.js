@@ -9,15 +9,16 @@ const initAction = () => {
         name: 'name'  
     }]).then(answers => {  
         console.log('项目名为：', answers.name)  
-        console.log('正在创建项目，请稍等')        
+        console.log('飞快的下载相关资源中，请稍等')        
         const remote = 'https://github.com/bestvayne/tem-page.git'  
-        const curName = 'template-source'  
+        const curName = 'tem-page'  
         const tarName = answers.name  
         shell.exec(`  
-                git clone ${remote} --depth=1  
-                mv ${curName} ${tarName}  
-                rm -rf ./${tarName}/.git  
-                cd ${tarName}  
+                git clone ${remote}   
+                mv ${curName} ${tarName} 
+                cd ${tarName} 
+                rm -rf ./${tarName}/.git
+                rm -rf ./${tarName}/.gitignore
                 npm i  
               `, (error, stdout, stderr) => {  
             if (error) {  
@@ -29,9 +30,9 @@ const initAction = () => {
         });  
     })  
 }  
-program.version(require('../package.json').version)  
+program.version(require('./package.json').version)  
 program  
-    .command('init')  
-    .description('创建项目')  
+    .command('page')  
+    .description('快速生成个人介绍页面-示例页面')  
     .action(initAction)  
 program.parse(process.argv) 

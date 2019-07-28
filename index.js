@@ -1,3 +1,2 @@
 #! /usr/bin/env node
-console.log('start project!');
-console.log(process.argv)
+console.log('Hi~,Talented you,try to input "make-page",good job ^_^');
