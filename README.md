@@ -4,14 +4,14 @@
 
 
 
-##Generate a beautiful profile page from a few simple interactive command lines
+## Generate a beautiful profile page from a few simple interactive command lines
 ----
-###Install
+### Install
 ```bash
 $ npm i web-startup -g   // recommend that global install
 ```
 
-###just use:
+### just use:
 ```bash 
 $ make: page 
 ```
