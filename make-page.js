@@ -8,7 +8,7 @@ const initAction = () => {
         message: '请输入项目名称:',  
         name: 'name'  
     }]).then(answers => {  
-        console.log('项目名为：', answers.name)  
+        console.log('您的网站名称：', answers.name)  
         console.log('飞快的下载相关资源中，请稍等')        
         const remote = 'https://github.com/bestvayne/tem-page.git'  
         const curName = 'tem-page'  
